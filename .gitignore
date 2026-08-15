@@ -1,0 +1,19 @@
+# Entornos virtuales
+.venv/
+env/
+venv/
+
+# Secretos y variables de entorno locales
+.env
+.env.local
+
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+
+# Logs y OS
+*.log
+.DS_Store
