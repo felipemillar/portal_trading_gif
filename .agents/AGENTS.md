@@ -4,12 +4,12 @@ Bienvenido a `portal_trading_gif`. Este archivo define el alcance, arquitectura 
 
 ---
 
-## 🎯 Alcance del Proyecto
+## Alcance del Proyecto
 Este repositorio contiene un extractor de indicadores y noticias macroeconómicas asíncrono, tolerante a fallos y limpio, diseñado en Python. Sirve como capa de ingesta de datos para modelos de trading algorítmico cuantitativo.
 
 ---
 
-## 🛠️ Pila Tecnológica & Arquitectura
+## Pila Tecnológica & Arquitectura
 - **Python**: `>=3.10`
 - **Transporte HTTP**: `httpx` asíncrono (`AsyncClient`).
 - **Resiliencia**: `tenacity` con backoff exponencial.
@@ -21,7 +21,7 @@ Este repositorio contiene un extractor de indicadores y noticias macroeconómica
 
 ---
 
-## 👥 Protocolo de Colaboración: Antigravity + Claude
+## Protocolo de Colaboración: Antigravity + Claude
 Para maximizar la sinergia multimodelo, el flujo de trabajo se divide de la siguiente manera:
 
 1. **Claude (Arquitectura y Lógica)**:
@@ -34,7 +34,7 @@ Para maximizar la sinergia multimodelo, el flujo de trabajo se divide de la sigu
 
 ---
 
-## ⚠️ Reglas Obligatorias del Agente
+## Reglas Obligatorias del Agente
 
 ### 1. Error Masking en Python
 Al escribir bloques de manejo de errores (`except`):
@@ -56,4 +56,9 @@ Al escribir bloques de manejo de errores (`except`):
 ### 3. Tratamiento de Datos Temporales (ETL)
 - Toda serie de tiempo debe normalizar sus fechas al estándar ISO 8601 (`YYYY-MM-DD`).
 - Los valores deben ser coercidos a tipo flotante (`float`).
-- Para datos ausentes (como fines de semana en tipo de cambio o el punto `"."` en la API de FRED), se debe forzar la conversión a `None` y aplicar un algoritmo de **Forward-Fill** (llenado hacia adelante) arrastrando el último valor oficial conocido y documentando el estado como interpolado.
+- Para datos ausentes (como fines de semana en tipo de cambio o el punto "." en la API de FRED), se debe forzar la conversión a `None` y aplicar un algoritmo de **Forward-Fill** (llenado hacia adelante) arrastrando el último valor oficial conocido y documentando el estado como interpolado.
+
+### 4. Estilo de Comunicación y Formato (Prohibición de Emojis)
+- **CERO EMOJIS O ICONOS**: Está estrictamente prohibido el uso de emojis, emoticones o iconos en cualquier archivo del proyecto.
+- Esta regla aplica para toda documentación (incluyendo este archivo, `README.md`, `BITACORA.md`), comentarios de código fuente, mensajes de commit, salidas en consola, logs de la aplicación y cualquier otra comunicación escrita o generada dentro del repositorio.
+- Esta directriz es obligatoria para **Antigravity** y **Claude** a partir de este momento.
