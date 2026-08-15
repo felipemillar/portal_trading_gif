@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeStation Analytics - Velas 30M & Perfil de Volumen</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="/static/styles.css">
+    <!-- Librerías Gráficas -->
+    <script src="https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-left">
+            <div class="brand-badge">TS QUANT</div>
+            <div class="brand-info">
+                <h1 class="brand-title">TRADESTATION ANALYTICS</h1>
+                <span class="brand-subtitle">Velas 30 Minutos & Perfil de Volumen Institucional (POC / VAH / VAL)</span>
+            </div>
+        </div>
+        
+        <div class="header-controls">
+            <div class="control-group">
+                <label for="symbol-select">Instrumento:</label>
+                <select id="symbol-select" class="custom-select">
+                    <!-- Dinámicamente poblado -->
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="range-select">Período:</label>
+                <select id="range-select" class="custom-select">
+                    <option value="5">Últimos 5 Días</option>
+                    <option value="15" selected>Últimos 15 Días</option>
+                    <option value="30">Últimos 30 Días</option>
+                    <option value="60">Últimos 60 Días</option>
+                    <option value="250">Año Completo (2026)</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="vp-view-mode">Modo Perfil:</label>
+                <select id="vp-view-mode" class="custom-select">
+                    <option value="global" selected>Perfil Global (Rango)</option>
+                    <option value="daily_sessions">Sesiones Diarias</option>
+                </select>
+            </div>
+
+            <button id="btn-refresh" class="btn-primary">Actualizar</button>
+        </div>
+    </header>
+
+    <section class="kpi-ribbon">
+        <div class="kpi-card">
+            <span class="kpi-label">ÚLTIMO PRECIO (30M)</span>
+            <span id="kpi-price" class="kpi-val highlight">--.--</span>
+            <span id="kpi-change" class="kpi-sub">--</span>
+        </div>
+        <div class="kpi-card">
+            <span class="kpi-label">POINT OF CONTROL (POC)</span>
+            <span id="kpi-poc" class="kpi-val poc-color">--.--</span>
+            <span class="kpi-sub">Máxima Concentración</span>
+        </div>
+        <div class="kpi-card">
+            <span class="kpi-label">VALUE AREA HIGH (VAH 70%)</span>
+            <span id="kpi-vah" class="kpi-val vah-color">--.--</span>
+            <span class="kpi-sub">Límite Superior 1σ</span>
+        </div>
+        <div class="kpi-card">
+            <span class="kpi-label">VALUE AREA LOW (VAL 70%)</span>
+            <span id="kpi-val" class="kpi-val val-color">--.--</span>
+            <span class="kpi-sub">Límite Inferior 1σ</span>
+        </div>
+        <div class="kpi-card">
+            <span class="kpi-label">VOLUMEN TOTAL DEL RANGO</span>
+            <span id="kpi-total-vol" class="kpi-val">--</span>
+            <span id="kpi-delta" class="kpi-sub">Comprador: --% | Vendedor: --%</span>
+        </div>
+        <div class="kpi-card">
+            <span class="kpi-label">RANGO DE PRECIO</span>
+            <span id="kpi-range" class="kpi-val">--</span>
+            <span id="kpi-candles-count" class="kpi-sub">-- velas 30M</span>
+        </div>
+    </section>
+
+    <main class="main-container">
+        <!-- Panel Izquierdo: Velas 30M (70%) -->
+        <div class="chart-panel candles-panel">
+            <div class="panel-header">
+                <div class="panel-title-wrap">
+                    <span class="panel-indicator"></span>
+                    <h2 class="panel-title">GRÁFICO DE PRECIO & VOLUMEN (VELAS 30 MINUTOS)</h2>
+                </div>
+                <div class="panel-actions">
+                    <span id="candles-symbol-badge" class="badge">--</span>
+                    <span id="candles-date-badge" class="badge-sub">--</span>
+                </div>
+            </div>
+            <div id="chart-candles" class="chart-box"></div>
+        </div>
+
+        <!-- Panel Derecho: Perfil de Volumen Plotly (30%) -->
+        <div class="chart-panel profile-panel">
+            <div class="panel-header">
+                <div class="panel-title-wrap">
+                    <span class="panel-indicator vp-indicator"></span>
+                    <h2 class="panel-title">PERFIL DE VOLUMEN (PLOTLY)</h2>
+                </div>
+                <div class="panel-actions">
+                    <span class="legend-chip poc-chip">POC</span>
+                    <span class="legend-chip vah-chip">VAH</span>
+                    <span class="legend-chip val-chip">VAL</span>
+                </div>
+            </div>
+            <div id="chart-profile" class="chart-box"></div>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <div class="footer-status">
+            <span class="status-dot online"></span>
+            <span>Motor Cuantitativo Local Activo</span>
+            <span class="divider">|</span>
+            <span id="data-coverage-info">Cargando instrumentos disponibles...</span>
+        </div>
+        <div class="footer-meta">
+            <span>Resolución Base: 1 Minuto TradeStation -> Agregado a 30M</span>
+        </div>
+    </footer>
+
+    <!-- Script Principal -->
+    <script src="/static/app.js"></script>
+</body>
+</html>
