@@ -1,0 +1,751 @@
+{
+  "TIPO_DE_CAMBIO_Y_DIVISAS": [
+    {
+      "seriesId": "G073.TCMX.IND.199801.D",
+      "title": "Índice TCM-X (2 enero 1998=100)",
+      "frequency": "DAILY",
+      "first": "02-01-2002",
+      "last": "17-08-2026"
+    },
+    {
+      "seriesId": "F021.CIR.STO.R.P96.0.D",
+      "title": "Circulante - Serie Real",
+      "frequency": "DAILY",
+      "first": "03-01-2011",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F022.CAP.TIP.D089.US.Z.D",
+      "title": "Tasa de interés promedio (TIP), captaciones de 30 a 89 días, dólar de EEUU",
+      "frequency": "DAILY",
+      "first": "02-01-2007",
+      "last": "13-08-2026"
+    },
+    {
+      "seriesId": "F022.CAP.TIP.D090.US.Z.D",
+      "title": "Tasa de interés promedio (TIP), captaciones de 90 días a un año, dólar de EEUU",
+      "frequency": "DAILY",
+      "first": "02-01-2007",
+      "last": "13-08-2026"
+    },
+    {
+      "seriesId": "F022.CDO3.PRE.Z.Z.CLP.D",
+      "title": "Tipo cambio promedio ponderado por licitación compra de dólares (pesos por dólar)",
+      "frequency": "DAILY",
+      "first": "14-04-2008",
+      "last": "26-10-2023"
+    },
+    {
+      "seriesId": "F022.CDO5.PRE.Z.Z.CLP.D",
+      "title": "Tipo cambio máximo adjudicado por licitación compra de dólares (pesos por dólar)",
+      "frequency": "DAILY",
+      "first": "14-04-2008",
+      "last": "29-09-2008"
+    },
+    {
+      "seriesId": "F022.CDO6.PRE.Z.Z.CLP.D",
+      "title": "Tipo cambio mínimo adjudicado por licitación compra de dólares (pesos por dólar)",
+      "frequency": "DAILY",
+      "first": "14-04-2008",
+      "last": "29-09-2008"
+    },
+    {
+      "seriesId": "F022.COL.TIP.D089.US.Z.D",
+      "title": "Tasa de interés promedio (TIP), colocaciones de 30 a 89 días, dólar de EEUU",
+      "frequency": "DAILY",
+      "first": "02-01-2007",
+      "last": "13-08-2026"
+    },
+    {
+      "seriesId": "F022.COL.TIP.D090.US.Z.D",
+      "title": "Tasa de interés promedio (TIP), colocaciones de 90 días a un año, dólar de EEUU",
+      "frequency": "DAILY",
+      "first": "02-01-2007",
+      "last": "13-08-2026"
+    },
+    {
+      "seriesId": "F022.TOS.TIN.AN01.US.Z.D",
+      "title": "Tasas On-Shore base Prime dólar de EEUU 1 año",
+      "frequency": "DAILY",
+      "first": "31-12-1899",
+      "last": "13-08-2026"
+    },
+    {
+      "seriesId": "F022.TOS.TIN.D090.US.Z.D",
+      "title": "Tasas On-Shore base Prime dólar de EEUU 3 meses",
+      "frequency": "DAILY",
+      "first": "31-12-1899",
+      "last": "13-08-2026"
+    },
+    {
+      "seriesId": "F022.TOS.TIN.D180.US.Z.D",
+      "title": "Tasas On-Shore base Prime dólar de EEUU 6 meses",
+      "frequency": "DAILY",
+      "first": "31-12-1899",
+      "last": "13-08-2026"
+    },
+    {
+      "seriesId": "F022.VDO3.PRE.Z.Z.USD.D",
+      "title": "Promedio ponderado por ventas de dólares de la Tesorería General de la República (pesos por dólar)",
+      "frequency": "DAILY",
+      "first": "27-03-2009",
+      "last": "20-11-2009"
+    },
+    {
+      "seriesId": "F022.VDOB4.PPO.Z.Z.USD.D",
+      "title": "Venta de dólares por licitación del BCCh, Venta FX Spot, Tipo de cambio promedio ponderado (pesos por dólar)",
+      "frequency": "DAILY",
+      "first": "02-12-2019",
+      "last": "30-09-2022"
+    },
+    {
+      "seriesId": "F022.VFWP4.PRE.D028.Z.USD.D",
+      "title": "Ventas de Forward por plazo,  28 días , Tipo de cambio promedio adjudicado (pesos por dólar)",
+      "frequency": "DAILY",
+      "first": "26-12-2019",
+      "last": "14-08-2026"
+    }
+  ],
+  "TASAS_DE_INTERES_Y_POLITICA_MONETARIA": [
+    {
+      "seriesId": "F022.BCLP.TIS.AN01.NO.Z.D",
+      "title": "Tasa de interés mercado secundario de los bonos licitados por el BCCh (BCP) a 1 año",
+      "frequency": "DAILY",
+      "first": "17-03-2003",
+      "last": "24-12-2025"
+    },
+    {
+      "seriesId": "F022.BCLP.TIS.AN02.NO.Z.D",
+      "title": "Tasa de interés mercado secundario de los bonos licitados por el BCCh (BCP) a 2 años",
+      "frequency": "DAILY",
+      "first": "12-09-2002",
+      "last": "11-08-2026"
+    },
+    {
+      "seriesId": "F022.BCLP.TIS.AN05.NO.Z.D",
+      "title": "Tasa de interés mercado secundario de los bonos licitados por el BCCh (BCP) a 5 años",
+      "frequency": "DAILY",
+      "first": "12-09-2002",
+      "last": "13-08-2026"
+    },
+    {
+      "seriesId": "F022.BCLP.TIS.AN10.NO.Z.D",
+      "title": "Tasa de interés mercado secundario de los bonos licitados por el BCCh (BCP) a 10 años",
+      "frequency": "DAILY",
+      "first": "15-07-2004",
+      "last": "13-08-2026"
+    },
+    {
+      "seriesId": "F022.BCP.STO.Z.Z.CLP.D",
+      "title": "Stock total en circulación de BCP, diaria (millones de pesos)",
+      "frequency": "DAILY",
+      "first": "13-09-2002",
+      "last": "13-08-2026"
+    },
+    {
+      "seriesId": "F022.BCP.TIN.AN02.NO.Z.D",
+      "title": "Tasas de interés por licitación de BCP a 2 años (base 365 días) (porcentaje)",
+      "frequency": "DAILY",
+      "first": "12-09-2002",
+      "last": "04-08-2016"
+    },
+    {
+      "seriesId": "F022.BCP.TIN.AN05.NO.Z.D",
+      "title": "Tasas de interés por licitación de BCP a 5 años (base 365 días) (porcentaje)",
+      "frequency": "DAILY",
+      "first": "12-09-2002",
+      "last": "07-07-2015"
+    },
+    {
+      "seriesId": "F022.BCP.TIN.AN10.NO.Z.D",
+      "title": "Tasas de interés por licitación de BCP a 10 años (base 365 días) (porcentaje)",
+      "frequency": "DAILY",
+      "first": "15-07-2004",
+      "last": "27-08-2013"
+    },
+    {
+      "seriesId": "F022.BCP1.FLU.AN02.Z.CLP.D",
+      "title": "Cupo por licitación de BCP a 2 años (millones de pesos)",
+      "frequency": "DAILY",
+      "first": "12-09-2002",
+      "last": "17-08-2016"
+    },
+    {
+      "seriesId": "F022.BCP1.FLU.AN05.Z.CLP.D",
+      "title": "Cupo por licitación de BCP a 5 años (millones de pesos)",
+      "frequency": "DAILY",
+      "first": "12-09-2002",
+      "last": "07-07-2015"
+    },
+    {
+      "seriesId": "F022.BCP1.FLU.AN10.Z.CLP.D",
+      "title": "Cupo por licitación de BCP a 10 años (millones de pesos)",
+      "frequency": "DAILY",
+      "first": "15-07-2004",
+      "last": "27-08-2013"
+    },
+    {
+      "seriesId": "F022.BCP2.FLU.AN02.Z.CLP.D",
+      "title": "Monto demandado por licitación de BCP a 2 años (millones de pesos)",
+      "frequency": "DAILY",
+      "first": "12-09-2002",
+      "last": "04-08-2016"
+    },
+    {
+      "seriesId": "F022.BCP2.FLU.AN05.Z.CLP.D",
+      "title": "Monto demandado por licitación de BCP a 5 años (millones de pesos)",
+      "frequency": "DAILY",
+      "first": "12-09-2002",
+      "last": "07-07-2015"
+    },
+    {
+      "seriesId": "F022.BCP2.FLU.AN10.Z.CLP.D",
+      "title": "Monto demandado por licitación de BCP a 10 años (millones de pesos)",
+      "frequency": "DAILY",
+      "first": "15-07-2004",
+      "last": "27-08-2013"
+    },
+    {
+      "seriesId": "F022.BCP3.FLU.AN02.Z.CLP.D",
+      "title": "Monto total adjudicado por licitación de BCP a 2 años (millones de pesos)",
+      "frequency": "DAILY",
+      "first": "12-09-2002",
+      "last": "04-08-2016"
+    }
+  ],
+  "INFLACION_PRECIOS_Y_UNIDADES_REAJUSTABLES": [
+    {
+      "seriesId": "F022.BCU.STO.Z.Z.UF.D",
+      "title": "Stock total en circulación de BCU, diaria (miles de UF)",
+      "frequency": "DAILY",
+      "first": "11-09-2002",
+      "last": "13-08-2026"
+    },
+    {
+      "seriesId": "F022.BCU1.FLU.AN02.Z.UF.D",
+      "title": "Cupo por licitación de BCU a 2 años (miles de UF)",
+      "frequency": "DAILY",
+      "first": "16-05-2008",
+      "last": "15-12-2011"
+    },
+    {
+      "seriesId": "F022.BCU1.FLU.AN05.Z.UF.D",
+      "title": "Cupo por licitación de BCU a 5 años (miles de UF)",
+      "frequency": "DAILY",
+      "first": "10-09-2002",
+      "last": "10-09-2013"
+    },
+    {
+      "seriesId": "F022.BCU1.FLU.AN10.Z.UF.D",
+      "title": "Cupo por licitación de BCU a 10 años (miles de UF)",
+      "frequency": "DAILY",
+      "first": "10-09-2002",
+      "last": "20-08-2013"
+    },
+    {
+      "seriesId": "F022.BCU1.FLU.AN20.Z.UF.D",
+      "title": "Cupo por licitación de BCU a 20 años (miles de UF)",
+      "frequency": "DAILY",
+      "first": "10-09-2002",
+      "last": "01-12-2011"
+    },
+    {
+      "seriesId": "F022.BCU1.FLU.AN30.Z.UF.D",
+      "title": "Cupo por licitación de BCU a 30 años (miles de UF)",
+      "frequency": "DAILY",
+      "first": "16-02-2011",
+      "last": "15-12-2011"
+    },
+    {
+      "seriesId": "F022.BCU2.FLU.AN02.Z.UF.D",
+      "title": "Monto demandado por licitación de BCU a 2 años (miles de UF)",
+      "frequency": "DAILY",
+      "first": "16-05-2008",
+      "last": "15-12-2011"
+    },
+    {
+      "seriesId": "F022.BCU2.FLU.AN05.Z.UF.D",
+      "title": "Monto demandado por licitación de BCU a 5 años (miles de UF)",
+      "frequency": "DAILY",
+      "first": "10-09-2002",
+      "last": "10-09-2013"
+    },
+    {
+      "seriesId": "F022.BCU2.FLU.AN10.Z.UF.D",
+      "title": "Monto demandado por licitación de BCU a 10 años (miles de UF)",
+      "frequency": "DAILY",
+      "first": "10-09-2002",
+      "last": "20-08-2013"
+    },
+    {
+      "seriesId": "F022.BCU2.FLU.AN20.Z.UF.D",
+      "title": "Monto demandado por licitación de BCU a 20 años (miles de UF)",
+      "frequency": "DAILY",
+      "first": "10-09-2002",
+      "last": "01-12-2011"
+    },
+    {
+      "seriesId": "F022.BCU2.FLU.AN30.Z.UF.D",
+      "title": "Monto demandado por licitación de BCU a 30 años (miles de UF)",
+      "frequency": "DAILY",
+      "first": "16-02-2011",
+      "last": "15-12-2011"
+    },
+    {
+      "seriesId": "F022.BCU3.FLU.AN02.Z.UF.D",
+      "title": "Monto total adjudicado por licitación BCU a 2 años (miles de UF)",
+      "frequency": "DAILY",
+      "first": "16-05-2008",
+      "last": "15-12-2011"
+    },
+    {
+      "seriesId": "F022.BCU3.FLU.AN05.Z.UF.D",
+      "title": "Monto total adjudicado por licitación BCU a 5 años (miles de UF)",
+      "frequency": "DAILY",
+      "first": "10-09-2002",
+      "last": "10-09-2013"
+    },
+    {
+      "seriesId": "F022.BCU3.FLU.AN10.Z.UF.D",
+      "title": "Monto total adjudicado por licitación de BCU a 10 años (miles de UF)",
+      "frequency": "DAILY",
+      "first": "10-09-2002",
+      "last": "20-08-2013"
+    },
+    {
+      "seriesId": "F022.BCU3.FLU.AN20.Z.UF.D",
+      "title": "Monto total adjudicado por licitación de BCU a 20 años (miles de UF)",
+      "frequency": "DAILY",
+      "first": "10-09-2002",
+      "last": "01-12-2011"
+    }
+  ],
+  "ACTIVIDAD_ECONOMICA_Y_CRECIMIENTO": [
+    {
+      "seriesId": "F022.CMX.TIP.P1.US.Z.D",
+      "title": "Tasa de interés promedio, Comercio Exterior  - Más de 1 año",
+      "frequency": "DAILY",
+      "first": "07-01-2002",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F022.CMX.TIP.P1811.US.Z.D",
+      "title": "Tasa de interès promedio, Comercio Exterior  - 181 dìas a 1 año",
+      "frequency": "DAILY",
+      "first": "07-01-2002",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F022.CMX.TIP.P30.US.Z.D",
+      "title": "Tasa de interès promedio, Comercio Exterior - Menor a 30 días",
+      "frequency": "DAILY",
+      "first": "07-01-2002",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F022.CMX.TIP.P3089.US.Z.D",
+      "title": "Tasa de interès promedio, Comercio Exterior - 30 a 89 días",
+      "frequency": "DAILY",
+      "first": "07-01-2002",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F022.CMX.TIP.P90180.US.Z.D",
+      "title": "Tasa de interès promedio, Comercio Exterior  - 90 a 180 días",
+      "frequency": "DAILY",
+      "first": "07-01-2002",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F022.CMX.TIP.Z.US.Z.D",
+      "title": "Tasa de interés promedio créditos de comercio exterior , total (nominales), serie semanal",
+      "frequency": "DAILY",
+      "first": "07-01-2002",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F022.COLCOMEX.PRO.Z.Z.CLP.D",
+      "title": "Comercio exterior \\ Moneda nacional, colocaciones efectivas del sector bancario  \\BCCh\\ Diario \\ Miles de millones de pesos \\ Promedio  ",
+      "frequency": "DAILY",
+      "first": "07-01-2018",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F022.COLCOMEX.PRO.Z.Z.USD.D",
+      "title": "Comercio exterior \\ Moneda extranjera, colocaciones efectivas del sector bancario  \\BCCh\\ Diario \\ Millones de USD \\ Promedio  ",
+      "frequency": "DAILY",
+      "first": "07-01-2018",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F068.B1.FLU.C6.0.C.N.Z.Z.Z.Z.6.0.D",
+      "title": "Balanza de pagos, exportaciones, industria metálica basica, flujo semanal",
+      "frequency": "DAILY",
+      "first": "07-01-2003",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F068.B1.FLU.C61.0.C.N.Z.Z.Z.Z.6.0.D",
+      "title": "Balanza de pagos, exportaciones, industria metálica basica, ferromolibdeno, flujo semanal",
+      "frequency": "DAILY",
+      "first": "07-01-2003",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F068.B1.FLU.C62.0.C.N.Z.Z.Z.Z.6.0.D",
+      "title": "Balanza de pagos, exportaciones,Industria metalica basica, alambre de cobre",
+      "frequency": "DAILY",
+      "first": "07-01-2003",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F068.B1.FLU.C751.0.M.N.J.Z.Z.Z.6.0.D",
+      "title": "Balanza de pagos, importaciones, resto bienes intermedios, Partes y piezas de maquinaria para la minería y la construcción, CIF, flujo semanal",
+      "frequency": "DAILY",
+      "first": "07-01-2003",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F068.B1.FLU.C753.0.M.N.K.Z.Z.Z.6.0.D",
+      "title": "Balanza de pagos, importaciones, bienes de capital, Maquinaria para la minería y la construcción, CIF, flujo semanal",
+      "frequency": "DAILY",
+      "first": "07-01-2003",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F034.VDCM.IND.DBC.2018.0.D",
+      "title": "IVDCM \\ Índice de ventas diarias de comercio minorista (IVDCM) \\ BCCh \\ Diario \\ Índice",
+      "frequency": "DAILY",
+      "first": "01-01-2018",
+      "last": "30-06-2026"
+    },
+    {
+      "seriesId": "F034.VDCM.IPM28D.DBC.2018.0.D",
+      "title": "Índice promedio móvil de 28 días \\ Índice de ventas diarias de comercio minorista (IVDCM) \\ BCCh \\ Diario \\ Índice",
+      "frequency": "DAILY",
+      "first": "28-01-2018",
+      "last": "30-06-2026"
+    }
+  ],
+  "SECTOR_EXTERNO_Y_BALANZA_DE_PAGOS": [
+    {
+      "seriesId": "F062.A5.STO.PF.USD.D",
+      "title": "PII Activos de reservas, 1996-2011, serie semanal",
+      "frequency": "DAILY",
+      "first": "31-12-1995",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F021.D1A.STO.N.CLP.0.D",
+      "title": "Base monetaria y agregados monetarios privados / Depósitos en cuenta corriente",
+      "frequency": "DAILY",
+      "first": "03-01-2011",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F022.LCBC.STO.Z.Z.CLP.D",
+      "title": "Liquidez sistema financiero, Cuenta Corriente(millones de pesos)",
+      "frequency": "DAILY",
+      "first": "25-01-2005",
+      "last": "13-08-2026"
+    },
+    {
+      "seriesId": "F089.EOF.FI_TC_CU.MS.D",
+      "title": "Evolución encuesta de operadores financieros (EOF), Factores de incidencia en Tipo de Cambio: Cobre",
+      "frequency": "DAILY",
+      "first": "07-10-2021",
+      "last": "23-07-2026"
+    },
+    {
+      "seriesId": "F068.B1.FLU.A.0.C.N.Z.Z.Z.Z.6.0.D",
+      "title": "Balanza de pagos, exportaciones, mineras, flujo semanal",
+      "frequency": "DAILY",
+      "first": "01-01-2003",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F068.B1.FLU.A1.0.C.N.Z.Z.Z.Z.6.0.D",
+      "title": "Balanza de pagos, exportaciones, mineras, cobre, flujo semanal",
+      "frequency": "DAILY",
+      "first": "07-01-2003",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F068.B1.FLU.A2.0.C.N.Z.Z.Z.Z.6.0.D",
+      "title": "Balanza de pagos, exportaciones, mineras, cobre, cátodos, flujo semanal",
+      "frequency": "DAILY",
+      "first": "07-01-2003",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F068.B1.FLU.A3.0.C.N.Z.Z.Z.Z.6.0.D",
+      "title": "Balanza de pagos, exportaciones, mineras, cobre, concentrados, flujo semanal",
+      "frequency": "DAILY",
+      "first": "07-01-2003",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F068.B1.FLU.A4.0.C.N.Z.Z.Z.Z.6.0.D",
+      "title": "Balanza de pagos, exportaciones, mineras, hierro, flujo semanal",
+      "frequency": "DAILY",
+      "first": "07-01-2003",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F068.B1.FLU.A5.0.C.N.Z.Z.Z.Z.6.0.D",
+      "title": "Balanza de pagos, exportaciones, mineras, plata, flujo semanal",
+      "frequency": "DAILY",
+      "first": "07-01-2003",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F068.B1.FLU.A6.0.C.N.Z.Z.Z.Z.6.0.D",
+      "title": "Balanza de pagos, exportaciones, mineras, oro, flujo semanal",
+      "frequency": "DAILY",
+      "first": "07-01-2003",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F068.B1.FLU.A7.0.C.N.Z.Z.Z.Z.6.0.D",
+      "title": "Balanza de pagos, exportaciones, mineras, concentrado de molibdeno, flujo semanal",
+      "frequency": "DAILY",
+      "first": "07-01-2003",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F068.B1.FLU.A7.0.M.N.J.Z.Z.Z.6.0.D",
+      "title": "Balanza de pagos, importaciones, resto bienes intermedios, Concentrado de molibdeno, CIF, flujo semanal",
+      "frequency": "DAILY",
+      "first": "07-01-2003",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F068.B1.FLU.A8.0.C.N.Z.Z.Z.Z.6.0.D",
+      "title": "Balanza de pagos, exportaciones, mineras, carbonato de litio, flujo semanal",
+      "frequency": "DAILY",
+      "first": "07-01-2003",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F068.B1.FLU.A9.0.C.N.Z.Z.Z.Z.6.0.D",
+      "title": "Balanza de pagos, exportaciones, mineras, sal marina y de mesa, flujo semanal",
+      "frequency": "DAILY",
+      "first": "07-01-2003",
+      "last": "31-07-2026"
+    }
+  ],
+  "MERCADO_LABORAL_Y_EMPLEO": [
+    {
+      "seriesId": "F049.BPV.PMT.INE9.H15.M",
+      "title": "Buscan trabajo por primera vez, hombres ; Fuerza de trabajo nacional, empleo, desocupados e inactivos por tramo de edad y por género, 15 a 19 años; nominal; stock; mensual; miles de personas; INE",
+      "frequency": "MONTHLY",
+      "first": "01-03-2010",
+      "last": "01-06-2026"
+    },
+    {
+      "seriesId": "F049.BPV.PMT.INE9.H20.M",
+      "title": "Buscan trabajo por primera vez, hombres ; Fuerza de trabajo nacional, empleo, desocupados e inactivos por tramo de edad y por género, 20 a 24 años; nominal; stock; mensual; miles de personas; INE",
+      "frequency": "MONTHLY",
+      "first": "01-03-2010",
+      "last": "01-06-2026"
+    },
+    {
+      "seriesId": "F049.BPV.PMT.INE9.H25.M",
+      "title": "Buscan trabajo por primera vez, hombres ; Fuerza de trabajo nacional, empleo, desocupados e inactivos por tramo de edad y por género, 25 a 29 años; nominal; stock; mensual; miles de personas; INE",
+      "frequency": "MONTHLY",
+      "first": "01-03-2010",
+      "last": "01-06-2026"
+    },
+    {
+      "seriesId": "F049.BPV.PMT.INE9.H30.M",
+      "title": "Buscan trabajo por primera vez, hombres ; Fuerza de trabajo nacional, empleo, desocupados e inactivos por tramo de edad y por género, 30 a 34 años; nominal; stock; mensual; miles de personas; INE",
+      "frequency": "MONTHLY",
+      "first": "01-03-2010",
+      "last": "01-06-2026"
+    },
+    {
+      "seriesId": "F049.BPV.PMT.INE9.H35.M",
+      "title": "Buscan trabajo por primera vez, hombres ; Fuerza de trabajo nacional, empleo, desocupados e inactivos por tramo de edad y por género, 35 a 39 años; nominal; stock; mensual; miles de personas; INE",
+      "frequency": "MONTHLY",
+      "first": "01-03-2010",
+      "last": "01-06-2026"
+    },
+    {
+      "seriesId": "F049.BPV.PMT.INE9.H40.M",
+      "title": "Buscan trabajo por primera vez, hombres ; Fuerza de trabajo nacional, empleo, desocupados e inactivos por tramo de edad y por género, 40 a 44 años; nominal; stock; mensual; miles de personas; INE",
+      "frequency": "MONTHLY",
+      "first": "01-03-2010",
+      "last": "01-06-2026"
+    },
+    {
+      "seriesId": "F049.BPV.PMT.INE9.H45.M",
+      "title": "Buscan trabajo por primera vez, hombres ; Fuerza de trabajo nacional, empleo, desocupados e inactivos por tramo de edad y por género, 45 a 49 años; nominal; stock; mensual; miles de personas; INE",
+      "frequency": "MONTHLY",
+      "first": "01-03-2010",
+      "last": "01-06-2026"
+    },
+    {
+      "seriesId": "F049.BPV.PMT.INE9.H50.M",
+      "title": "Buscan trabajo por primera vez, hombres ; Fuerza de trabajo nacional, empleo, desocupados e inactivos por tramo de edad y por género, 50 a 54 años; nominal; stock; mensual; miles de personas; INE",
+      "frequency": "MONTHLY",
+      "first": "01-03-2010",
+      "last": "01-06-2026"
+    },
+    {
+      "seriesId": "F049.BPV.PMT.INE9.H55.M",
+      "title": "Buscan trabajo por primera vez, hombres ; Fuerza de trabajo nacional, empleo, desocupados e inactivos por tramo de edad y por género, 55 a 59 años; nominal; stock; mensual; miles de personas; INE",
+      "frequency": "MONTHLY",
+      "first": "01-03-2010",
+      "last": "01-06-2026"
+    },
+    {
+      "seriesId": "F049.BPV.PMT.INE9.H60.M",
+      "title": "Buscan trabajo por primera vez, hombres ; Fuerza de trabajo nacional, empleo, desocupados e inactivos por tramo de edad y por género, 60 a 64 años; nominal; stock; mensual; miles de personas; INE",
+      "frequency": "MONTHLY",
+      "first": "01-03-2010",
+      "last": "01-06-2026"
+    },
+    {
+      "seriesId": "F049.BPV.PMT.INE9.H65.M",
+      "title": "Buscan trabajo por primera vez, hombres ; Fuerza de trabajo nacional, empleo, desocupados e inactivos por tramo de edad y por género, 65 a 69 años; nominal; stock; mensual; miles de personas; INE",
+      "frequency": "MONTHLY",
+      "first": "01-03-2010",
+      "last": "01-06-2026"
+    },
+    {
+      "seriesId": "F049.BPV.PMT.INE9.H70.M",
+      "title": "Buscan trabajo por primera vez, hombres ; Fuerza de trabajo nacional, empleo, desocupados e inactivos por tramo de edad y por género, 70 y más años; nominal; stock; mensual; miles de personas; INE",
+      "frequency": "MONTHLY",
+      "first": "01-03-2010",
+      "last": "01-06-2026"
+    },
+    {
+      "seriesId": "F049.BPV.PMT.INE9.M15.M",
+      "title": "Buscan trabajo por primera vez, mujeres ; Fuerza de trabajo nacional, empleo, desocupados e inactivos por tramo de edad y por género, 15 a 19 años; nominal; stock; mensual; miles de personas; INE",
+      "frequency": "MONTHLY",
+      "first": "01-03-2010",
+      "last": "01-06-2026"
+    },
+    {
+      "seriesId": "F049.BPV.PMT.INE9.M20.M",
+      "title": "Buscan trabajo por primera vez, mujeres ; Fuerza de trabajo nacional, empleo, desocupados e inactivos por tramo de edad y por género, 20 a 24 años; nominal; stock; mensual; miles de personas; INE",
+      "frequency": "MONTHLY",
+      "first": "01-03-2010",
+      "last": "01-06-2026"
+    },
+    {
+      "seriesId": "F049.BPV.PMT.INE9.M25.M",
+      "title": "Buscan trabajo por primera vez, mujeres ; Fuerza de trabajo nacional, empleo, desocupados e inactivos por tramo de edad y por género, 25 a 29 años; nominal; stock; mensual; miles de personas; INE",
+      "frequency": "MONTHLY",
+      "first": "01-03-2010",
+      "last": "01-06-2026"
+    }
+  ],
+  "MONEDA_CREDITO_Y_SISTEMA_FINANCIERO": [
+    {
+      "seriesId": "F021.AHP.STO.N.CLP.0.D",
+      "title": "Base monetaria y agregados monetarios privados / Depósitos de ahorro a plazo",
+      "frequency": "DAILY",
+      "first": "03-01-2011",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F021.BMO.STO.N.CLP.0.D",
+      "title": "Base monetaria y agregados monetarios privados / Base monetaria",
+      "frequency": "DAILY",
+      "first": "03-01-2011",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F021.BMO.STS.N.CLP.0.D",
+      "title": "Base monetaria y agregados monetarios privados, serie semanal / Base monetaria",
+      "frequency": "DAILY",
+      "first": "07-01-1996",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F021.BOT.STO.N.CLP.0.D",
+      "title": "Base monetaria y agregados monetarios privados / Bonos de Tesorería",
+      "frequency": "DAILY",
+      "first": "03-01-2011",
+      "last": "30-10-2024"
+    },
+    {
+      "seriesId": "F021.BOT.STO.N.CLP.5.D",
+      "title": "Bonos de la Tesorería General de la República | Agregados monetarios, componentes M3, saldos diarios | Banco central de chile | Diario | Miles de millones de pesos  | Stock",
+      "frequency": "DAILY",
+      "first": "03-01-2011",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F021.D1A.STO.N.CLP.0.D",
+      "title": "Base monetaria y agregados monetarios privados / Depósitos en cuenta corriente",
+      "frequency": "DAILY",
+      "first": "03-01-2011",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F021.DAV.STO.N.CLP.0.D",
+      "title": "Depósitos y ahorros vista (Dv + Ahv)",
+      "frequency": "DAILY",
+      "first": "02-01-2019",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F021.DAVO.STO.N.CLP.0.D",
+      "title": "Otros depósitos y ahorros vista",
+      "frequency": "DAILY",
+      "first": "02-01-2019",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F021.DBC.STO.N.CLP.0.D",
+      "title": "Base monetaria y agregados monetarios privados / Documentos del Banco Central",
+      "frequency": "DAILY",
+      "first": "03-01-2011",
+      "last": "30-10-2024"
+    },
+    {
+      "seriesId": "F021.DBC.STO.N.CLP.5.D",
+      "title": "Documentos del Banco Central de Chile | Agregados monetarios, componentes M3, saldos diarios | Banco central de chile | Diario | Miles de millones de pesos  | Stock",
+      "frequency": "DAILY",
+      "first": "03-01-2011",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F021.DME.STO.N.CLP.0.D",
+      "title": "Base monetaria y agregados monetarios privados / Depósitos en moneda extranjera",
+      "frequency": "DAILY",
+      "first": "03-01-2011",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F021.DP.STO.N.CLP.0.D",
+      "title": "Base monetaria y agregados monetarios privados / Depósitos a plazo",
+      "frequency": "DAILY",
+      "first": "03-01-2011",
+      "last": "30-10-2024"
+    },
+    {
+      "seriesId": "F021.DP.STO.N.CLP.5.D",
+      "title": "Depósitos y captaciones a plazo (Dp) | Agregados monetarios, componentes M2, saldos diarios  | Banco central de chile | Diario | Miles de millones de pesos  | Stock",
+      "frequency": "DAILY",
+      "first": "03-01-2011",
+      "last": "31-07-2026"
+    },
+    {
+      "seriesId": "F021.DPPO.STO.N.CLP.0.D",
+      "title": "Otros depósitos y captaciones a plazo, Componentes M2, saldos diarios, nominal, posición diaria, miles de millones de pesos, no desestacionalizado",
+      "frequency": "DAILY",
+      "first": "02-01-2019",
+      "last": "30-10-2024"
+    },
+    {
+      "seriesId": "F021.DPPO.STO.N.CLP.5.D",
+      "title": "Otros depósitos y captaciones a plazo | Agregados monetarios, depósitos y captaciones a plazo (Dp), componentes M2, saldos diarios  | Banco central de chile | Diario | Miles de millones de pesos  | Stock",
+      "frequency": "DAILY",
+      "first": "02-01-2019",
+      "last": "31-07-2026"
+    }
+  ]
+}

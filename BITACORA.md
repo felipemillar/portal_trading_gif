@@ -4,6 +4,23 @@ Este archivo registra el progreso, hitos clave, decisiones técnicas y la evoluc
 
 ---
 
+## [2026-08-15] - Sesión de Trabajo: Exploración Exhaustiva del Universo BCCh (25.350 Series) y Modularización
+
+**Objetivo:** Explorar sistemáticamente la totalidad del catálogo de series disponible en la API del Banco Central de Chile (BCCh BDE / SieteRestWS), clasificar taxonómicamente los dominios macro-financieros cuantitativos, generar el catálogo auditado con fecha actual y preparar la arquitectura para repositorios desacoplados.
+
+### Cambios Realizados:
+- **Exploración Exhaustiva de la API BCCh**: Descubrimiento y mapeo automatizado de 25.350 series estadísticas en las cuatro frecuencias (`DAILY`: 1.871, `MONTHLY`: 9.079, `QUARTERLY`: 8.749, `ANNUAL`: 5.651).
+- **Catálogo Exhaustivo ([CATALOGO_UNIVERSO_DATOS_BCCH_2026.md](file:///Users/fmillar/portal_trading_gif/CATALOGO_UNIVERSO_DATOS_BCCH_2026.md))**: Documento canónico fechado al 15 de agosto de 2026 que detalla las series oficiales, códigos únicos (`seriesId`), descripciones, rangos temporales y valores en vivo de los 7 dominios macroeconómicos (Tipos de Cambio, Tasas de Interés y Curvas Soberanas, Inflación y Precios, Actividad Económica e Imacec, Sector Externo y Balanza de Pagos, Sistema Financiero y Agregados Monetarios, Mercado Laboral).
+- **Validación Multidominio en Vivo ([test_bcch_multi_domain.py](file:///Users/fmillar/portal_trading_gif/test_bcch_multi_domain.py))**: Comprobación exitosa contra la API real de Dólar Observado ($913,20), TPM (4,50%), UF ($40.852,69), IPC Empalme Base 2023 (112,45), Imacec Empalme Base 2018 (111,03), Bonos BCP 10 años (5,66%), Base Monetaria y Exportaciones de Cobre.
+- **Actualización de Skill ([.agents/skills/bcch-macro-extractor/SKILL.md](file:///Users/fmillar/portal_trading_gif/.agents/skills/bcch-macro-extractor/SKILL.md))**: Actualización de la habilidad del agente con las series empalmadas vigentes y enlace directo al catálogo maestro.
+- **Cumplimiento Estricto de Política Cero Emojis**: Saneamiento total de iconos y emoticones en todos los archivos del repositorio (`AGENTS.md`, `README.md`, `BITACORA.md`, scripts de prueba y módulos fuente).
+
+### Decisiones y Notas de Diseño:
+- **Decodificación Latin-1**: Se incorporó soporte de respaldo para encoding `latin-1` (ISO-8859-1) en el cliente asíncrono para gestionar títulos con caracteres especiales sin interrumpir el parsing JSON.
+- **Empalme Estadístico**: Se identificaron y documentaron las series oficiales empalmadas vigentes (`G073.IPC.IND.2023.M` para IPC e `F032.IMC.IND.Z.Z.EP18.Z.Z.0.M` para Imacec) para evitar el uso de bases discontinuadas.
+
+---
+
 ## [2026-08-14] - Sesión de Trabajo: Integración de FRED y Configuración Multimodelo (Antigravity + Claude)
 
 **Objetivo:** Desarrollar el conector para la API de FRED (Federal Reserve Economic Data), asegurar su resiliencia ante límites de tasa micro-ráfaga, y establecer las bases de documentación para la programación en conjunto con Claude.

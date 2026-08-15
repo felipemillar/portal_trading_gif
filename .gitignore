@@ -6,6 +6,7 @@ venv/
 # Secretos y variables de entorno locales
 .env
 .env.local
+.agents/mcp_config.json
 
 # Python cache & bytecode
 __pycache__/
