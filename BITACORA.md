@@ -4,6 +4,19 @@ Este archivo registra el progreso, hitos clave, decisiones técnicas y la evoluc
 
 ---
 
+## [2026-08-15] - Desacoplamiento y Publicacion de Micro-Repositorio Independiente: `fred-connector`
+
+**Objetivo:** Empaquetar y publicar de forma autonoma el cliente y motor ETL de Federal Reserve Economic Data (FRED) en su propio repositorio publico en GitHub (`felipemillar/fred-connector`), permitiendo su consumo modular en proyectos cuantitativos.
+
+### Hitos Logrados:
+- **Creacion de Repositorio Standalone ([fred-connector](https://github.com/felipemillar/fred-connector))**: Estructura modular en `/Users/fmillar/fred-connector` con `pyproject.toml` moderno.
+- **Modelado Tipado y Motor ETL**: Modulos `models.py`, `etl.py`, `constants.py` y `client.py` con semaforo estricto de 2 RPS (`asyncio.Semaphore(2)`), reintentos con backoff exponencial para HTTP 429 y transformaciones matematicas del servidor (`units`).
+- **Guia Tecnica y Especificacion**: Documentacion integral de la API de FRED y ALFRED ([GUIA_API_FRED_2026.md](https://github.com/felipemillar/fred-connector/blob/main/GUIA_API_FRED_2026.md)).
+- **Skill 2026 en 3 Capas**: Skill estandarizada para Claude y Antigravity (`.agents/skills/fred-macro-extractor/`).
+- **Pruebas y Publicacion**: 7 pruebas unitarias pasando al 100% y publicacion del repositorio en GitHub (`gh repo create felipemillar/fred-connector --public`).
+
+---
+
 ## [2026-08-15] - Desacoplamiento y Publicacion de Micro-Repositorio Independiente: `bcch-connector`
 
 **Objetivo:** Empaquetar y publicar de forma autonoma el cliente y motor ETL del Banco Central de Chile en su propio repositorio publico en GitHub (`felipemillar/bcch-connector`), permitiendo su instalacion limpia via `pip` en multiples proyectos cuantitativos futuros.
