@@ -62,7 +62,7 @@ async def run_mock_validation():
         "2026-08-14"
     )
     print_table(filled_obs, "TEST SINTÉTICO (Mock Forward-Fill: 2026-08-08 a 2026-08-14)")
-    print("✅ Normalización y Forward-Fill validados exitosamente.")
+    print("Normalización y Forward-Fill validados exitosamente.")
 
 
 async def main():
@@ -114,11 +114,11 @@ async def main():
             print(f"[WARN] La consulta se completó exitosamente pero no retornó observaciones para el período.")
         else:
             print_table(obs_list, f"BANCO CENTRAL DE CHILE: {title} ({start_str} a {end_str})")
-            print(f"✅ Consulta en vivo completada exitosamente. Observaciones recibidas: {len(obs_list)}")
+            print(f"Consulta en vivo completada exitosamente. Observaciones recibidas: {len(obs_list)}")
 
     except Exception as err:
         logger.error(f"Error durante la consulta a BCCh: {type(err).__name__} (detalles omitidos por seguridad)")
-        print(f"\n❌ La consulta falló: {type(err).__name__}")
+        print(f"\nLa consulta falló: {type(err).__name__}")
 
 
 if __name__ == "__main__":

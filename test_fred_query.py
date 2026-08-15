@@ -76,10 +76,10 @@ async def main():
             print(f"[WARN] No se encontraron observaciones para la serie UNRATE.")
         else:
             print_fred_table(obs, f"TASA DE DESEMPLEO EE. UU. (Serie: UNRATE)")
-            print(f"✅ Consulta en vivo a FRED completada exitosamente. Observaciones obtenidas: {len(obs)}")
+            print(f"Consulta en vivo a FRED completada exitosamente. Observaciones obtenidas: {len(obs)}")
 
     except Exception as err:
-        print(f"\n❌ La consulta a FRED falló debido a una excepción: {type(err).__name__}")
+        print(f"\nLa consulta a FRED falló debido a una excepción: {type(err).__name__}")
 
 
 if __name__ == "__main__":

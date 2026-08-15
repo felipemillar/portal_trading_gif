@@ -75,15 +75,15 @@ async def main():
         
         if not feed:
             if "Note" in data or "Information" in data:
-                print(f"❌ Rate limit detectado: {data.get('Note') or data.get('Information')}")
+                print(f"Rate limit detectado: {data.get('Note') or data.get('Information')}")
             else:
                 print(f"[WARN] No se encontraron noticias recientes en la consulta.")
         else:
             print_news_table(feed, f"NOTICIAS DE MERCADOS FINANCIEROS Y SENTIMIENTO (Alpha Vantage)")
-            print(f"✅ Consulta en vivo completada exitosamente. Artículos recuperados: {len(feed)}")
+            print(f"Consulta en vivo completada exitosamente. Artículos recuperados: {len(feed)}")
 
     except Exception as err:
-        print(f"\n❌ La consulta a Alpha Vantage falló debido a una excepción: {type(err).__name__}")
+        print(f"\nLa consulta a Alpha Vantage falló debido a una excepción: {type(err).__name__}")
 
 
 if __name__ == "__main__":
