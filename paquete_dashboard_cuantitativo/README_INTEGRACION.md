@@ -4,7 +4,7 @@ Este paquete contiene la arquitectura completa del motor cuantitativo y el dashb
 
 Está listo para ser migrado e integrado en el proyecto `portal_trading_gif`.
 
-## 📂 Estructura del Paquete
+## Estructura del Paquete
 
 ```text
 export_dashboard/
@@ -18,7 +18,7 @@ export_dashboard/
 └── run_dashboard.sh              # Script de ejecución standalone
 ```
 
-## ⚙️ Dependencias de Python Necesarias en `portal_trading_gif`
+## Dependencias de Python Necesarias en `portal_trading_gif`
 
 Asegúrate de que el entorno virtual de destino tenga instaladas las siguientes librerías (puedes agregarlas a `requirements.txt`):
 ```bash
@@ -27,7 +27,7 @@ pip install fastapi uvicorn pandas numpy httpx
 
 *(El frontend no requiere NPM, consume Lightweight Charts y Plotly vía CDN directamente).*
 
-## 🚀 Guía de Integración
+## Guía de Integración
 
 1. **Mover Archivos**:
    Copia el contenido de `backend/` dentro de la carpeta `src/` o `backend/` de `portal_trading_gif`.
@@ -46,7 +46,7 @@ pip install fastapi uvicorn pandas numpy httpx
    ```
    Y registra los tres endpoints (`/api/instruments`, `/api/data/{symbol}/candles`, `/api/data/{symbol}/volume_profile`) en tu enrutador principal.
 
-## 🧠 Arquitectura de Componentes
+## Arquitectura de Componentes
 
 - **Lightweight Charts (TradingView)**: Renderiza las velas de 30 minutos y el sub-panel inferior con el volumen coloreado por sesgo (alcista/bajista). Se sincronizan líneas de precio horizontales (POC dorado, VAH verde, VAL azul) desde la API.
 - **Plotly.js**: Renderiza el Perfil de Volumen en barras horizontales agrupadas o apiladas, permitiendo alternar entre el Perfil Global del rango completo o la disección por sesiones diarias.
