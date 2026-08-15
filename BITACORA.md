@@ -4,6 +4,19 @@ Este archivo registra el progreso, hitos clave, decisiones técnicas y la evoluc
 
 ---
 
+## [2026-08-15] - Desacoplamiento y Publicacion de Micro-Repositorio Independiente: `bcch-connector`
+
+**Objetivo:** Empaquetar y publicar de forma autonoma el cliente y motor ETL del Banco Central de Chile en su propio repositorio publico en GitHub (`felipemillar/bcch-connector`), permitiendo su instalacion limpia via `pip` en multiples proyectos cuantitativos futuros.
+
+### Hitos Logrados:
+- **Creacion de Repositorio Standalone ([bcch-connector](https://github.com/felipemillar/bcch-connector))**: Estructura modular independiente en `/Users/fmillar/bcch-connector` con `pyproject.toml` moderno.
+- **Modelado Tipado y Motor ETL**: Modulos `models.py`, `etl.py`, `constants.py` y `client.py` con tipado estricto, Forward-Fill continuo y manejo de encoding `latin-1`.
+- **Catalogo Canonico Integrado**: Incorporacion de las 25.350 series clasificadas en 7 dominios analiticos.
+- **Skill 2026 en 3 Capas**: Skill estandarizada para Claude y Antigravity (`.agents/skills/bcch-macro-extractor/`).
+- **Pruebas y Publicacion**: 9 pruebas unitarias pasando al 100% y repositorio creado publicamente en GitHub (`gh repo create felipemillar/bcch-connector --public`).
+
+---
+
 ## [2026-08-15] - Sesión de Trabajo: Exploración Exhaustiva del Universo BCCh (25.350 Series) y Modularización
 
 **Objetivo:** Explorar sistemáticamente la totalidad del catálogo de series disponible en la API del Banco Central de Chile (BCCh BDE / SieteRestWS), clasificar taxonómicamente los dominios macro-financieros cuantitativos, generar el catálogo auditado con fecha actual y preparar la arquitectura para repositorios desacoplados.
